@@ -99,7 +99,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    height: 100%;
+    height: 70%;
     justify-content: space-evenly;
 }
 
@@ -148,7 +148,7 @@ body {
 .journal-entry-card-1 {
     display: flex;
     flex-direction: column;
-    height: 190px;
+    height: 170px;
     margin: 0;
     padding: 0;
     background-color: #A8987A;
@@ -159,7 +159,7 @@ body {
 .journal-entry-card-2 {
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 170px;
     margin: 0;
     padding: 0;
     background-color: #9DA7CA;
@@ -170,7 +170,7 @@ body {
 .journal-entry-card-3 {
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 170px;
     margin: 0;
     padding: 0;
     background-color: #909C87;
