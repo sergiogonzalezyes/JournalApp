@@ -11,57 +11,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="layout-wrapper">
-        <div>
-            <p class="date-header">Thursday, 29 September</p>
-            <p class="time-header">16:41</p>
+   
+    <header>
+        <div id="header">
+            <div id="date-header"></div>
+            <div id="time-header"></div>
         </div>
-        <button class="new-entry-button">
-            <i class="new-entry-icon fa-regular fa-pen-to-square"></i>
+        <div class="new-entry-button">
             <p class="new-entry-text">New Entry</p>
-        </button>
-        <div class="journal-entry-card-wrapper">
-            <div class="journal-card">
-                <div class="journal-entry-card-1">
-                    <div class="journal-card-content">
-                        <div class="journal-content-header">
-                            <p class="entry-date">Wed, 28 Sep</p>
-                            <div class="edit-icon-wrapper"><i class="edit-entry-icon fa-solid fa-pencil"></i></div>
-                        </div>
-                        <p class="entry-time">12:34 PM</p>
-                        <p class="entry-title">Lorem Ipsum</p>
-                        <p class="entry-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="journal-card">
-                <div class="journal-entry-card-2">
-                    <div class="journal-card-content">
-                        <div class="journal-content-header">
-                            <p class="entry-date">Tue, 27 Sep</p>
-                            <div class="edit-icon-wrapper"><i class="edit-entry-icon fa-solid fa-pencil"></i></div>
-                        </div>
-                        <p class="entry-time">08:16 AM</p>
-                        <p class="entry-title">Lorem Ipsum</p>
-                        <p class="entry-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="journal-card">
-                <div class="journal-entry-card-3">
-                    <div class="journal-card-content">
-                        <div class="journal-content-header">
-                            <p class="entry-date">Sun, 26 Sep</p>
-                            <div class="edit-icon-wrapper"><i class="edit-entry-icon fa-solid fa-pencil"></i></div>
-                        </div>
-                        <p class="entry-time">14:47 PM</p>
-                        <p class="entry-title">Lorem Ipsum</p>
-                        <p class="entry-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                    </div>
-                </div>
-            </div>
+            <i class="new-entry-icon fa-regular fa-pen-to-square"></i>
         </div>
-    </div>
+        <form class="entry-form">
+            <input type="text" class="new-entry-title" placeholder="Entry Title"></input>
+            <input type="text" class="new-entry-content" placeholder="Entry Content"></input>
+            <div class="form-buttons">
+                <button class="cancel-entry-button">
+                    <i class="cancel-entry-icon fa-solid fa-xmark"></i>
+                </button>
+                <button class="submit-entry-button">
+                    <i class="submit-entry-icon fa-solid fa-check"></i>
+                </button>
+            </div>
+        </form>
+    </header>
+
+    <main class="layout-wrapper">
+
+        <div class="journal-entry-card-wrapper">
+            <ul id="journal-entry-list">
+            </ul>
+        </div>
+    </main>
 
     <script src="index.js"></script>
 </body>
